@@ -49,7 +49,7 @@ const isRekhaExists = users.reduce((acc,curr) => {
 
 console.log(isRekhaExists);
 
-
+//every using reduce
 const isEveryoneAdult = users.reduce((acc,curr) => {
     acc = false;
     if(curr.age >= 18){
@@ -60,6 +60,8 @@ const isEveryoneAdult = users.reduce((acc,curr) => {
   
 console.log(isEveryoneAdult);
 
+
+//find using reduce
 const findData = users.reduce((acc,curr) => {
     if('alia' === curr.name){
         acc = curr;
@@ -69,6 +71,7 @@ const findData = users.reduce((acc,curr) => {
 
 console.log(findData);
 
+//map usinf reduce
 updateGender = users.reduce((acc,curr)=>{
     if('female' === curr.gender){
         curr.gender = 'male';
